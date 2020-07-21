@@ -1,5 +1,5 @@
 # term tree
 
-![Demo Image](/images/tree_home.jpg)
+A simple home page for a browser. Originally by [nytly](https://notabug.org/nytly/home).
 
-[original](https://notabug.org/nytly/home) by nytly
+![Demo Image](/images/tree_home.jpg)
