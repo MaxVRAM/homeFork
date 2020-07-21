@@ -56,7 +56,7 @@ docker-compose up -d
 sudo ufw allow 7000
 ```
 
-8. Now access the site on your local network within your browser using the ip of the machine and port number:
+8. Now access the site on your local network within your browser using the IP of the machine and port number:
 
 _On the local host:_
 
@@ -69,3 +69,9 @@ _On the local host:_
 - You can edit the links on the page by editing the file `site/script/script.js`.
 - Colours can be changed by editing `site/css/style.css`.
 - The search engine used can be changed in the `site/index.html` file.
+
+# Homepage Setup
+
+You can now use this site as your homepage on any machines on your local network by simply adding the address you tested above in your browser settings.
+
+If you want to remotely host this, you'll need to have a DNS pointing to your network and then set up a reverse proxy (like Nginx) to route the domain to the correct local IP and port.
