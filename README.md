@@ -31,7 +31,7 @@ cd /opt/http-frontpage
 sudo git clone https://github.com/MaxVRAM/homeFork.git
 ```
 
-4. Enter the homeFork directory and run docker-compose and edit the docker-compose.yml:
+4. Enter the homeFork directory and edit the docker-compose.yml:
 
 ```bash
 cd homeFork
