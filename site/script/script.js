@@ -1,6 +1,7 @@
 const Config = {
     name: "user",
     scale: 1,
+    engine: ["ddg","https://duckduckgo.com/"],
     Links: [
         [
             "site",
@@ -36,6 +37,18 @@ const Config = {
     ]
 }
 
+function mouseOverLink(x)
+{
+    document.getElementById("command").innerHTML = x;
+    document.getElementById("searchbar").style.visibility = "hidden";
+}
+
+function mouseOffLink(x)
+{
+    document.getElementById("command").innerHTML = Config.engine[0];
+    document.getElementById("searchbar").style.visibility = "visible";
+}
+
 const Main = (() => {
     const list = document.getElementById("list");
     const names = document.querySelectorAll("[data-Name]");
@@ -49,7 +62,7 @@ const Main = (() => {
                 <ul>
                     ${Links.map(([lName, url]) => `
                         <li>
-                            <a href="${url}">${lName}</a>
+                            <a onmouseenter="mouseOverLink('${lName}')" onmouseleave="mouseOffLink()" href="${url}">${lName}</a>
                         </li>`
                     ).join("")}
                 </ul>

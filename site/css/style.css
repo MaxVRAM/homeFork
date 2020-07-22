@@ -24,8 +24,9 @@ body {
     height: 100vh;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
+    margin-left: 25%;
 }
 
 .prompt {
@@ -48,6 +49,10 @@ h1 {
     font-weight: normal;
     color: var(--red);
     cursor: pointer;
+}
+
+var {
+    font-style: normal;
 }
 
 .tree>ul {
